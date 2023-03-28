@@ -168,3 +168,32 @@ WHERE Genre='Rock';
 
 SELECT * FROM Albums;
 ```
+
+## Q10
+```sql
+ALTER TABLE Artists
+  ADD COLUMN Duration INT NOT NULL; 
+```
+
+## Q11
+```sql
+DELETE
+FROM Albums
+WHERE HoursStreamed>400;
+```
+
+## Q12
+```sql
+SELECT HoursStreamed*1.2, AlbumName
+FROM Albums;
+```
+
+## Q13
+```sql
+UPDATE Artists
+SET NumberOfFollowers=NumberOfFollowers+200
+WHERE ArtistID=100;
+```
+
+## Q14
+```sql
