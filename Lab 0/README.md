@@ -157,14 +157,14 @@ WHERE Account_Yype = 'P';
 ```sql
 SELECT *
 FROM Albums
-WHERE ArtistName='Maroon 5' AND Genre='Rock';
+WHERE ArtistName = 'Maroon 5' AND Genre = 'Rock';
 ```
 
 ## Q9
 ```sql
 UPDATE Albums
-SET HoursStreamed=HoursStreamed+200
-WHERE Genre='Rock';
+SET HoursStreamed = HoursStreamed + 200
+WHERE Genre = 'Rock';
 
 SELECT * FROM Albums;
 ```
@@ -179,21 +179,29 @@ ALTER TABLE Artists
 ```sql
 DELETE
 FROM Albums
-WHERE HoursStreamed>400;
+WHERE HoursStreamed > 400;
 ```
 
 ## Q12
 ```sql
-SELECT HoursStreamed*1.2, AlbumName
+SELECT HoursStreamed * 1.2, AlbumName
 FROM Albums;
 ```
 
 ## Q13
 ```sql
 UPDATE Artists
-SET NumberOfFollowers=NumberOfFollowers+200
-WHERE ArtistID=100;
+SET NumberOfFollowers = NumberOfFollowers + 200
+WHERE ArtistID = 100;
 ```
 
 ## Q14
 ```sql
+UPDATE Artists
+SET Duration = DATEDIFF(CURDATE(), ActiveSince);
+```
+
+## Q15
+```sql
+
+```
