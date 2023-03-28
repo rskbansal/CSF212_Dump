@@ -157,6 +157,14 @@ WHERE Account_Yype = 'P';
 ```sql
 SELECT *
 FROM Albums
-WHERE AlbumName='Maroon 5' AND Genre='Rock';
+WHERE ArtistName='Maroon 5' AND Genre='Rock';
 ```
 
+## Q9
+```sql
+UPDATE Albums
+SET HoursStreamed=HoursStreamed+200
+WHERE Genre='Rock';
+
+SELECT * FROM Albums;
+```
