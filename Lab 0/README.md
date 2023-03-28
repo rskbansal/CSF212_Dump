@@ -203,3 +203,6 @@ SET Duration = DATEDIFF(CURDATE(), ActiveSince);
 
 ## Q16
 `SYSDATE()` also displays the current system time whereas `CURDATE()` doesn't
+
+## Q21
+When a query can be applied to a table as well as a database such as `CREATE`, `DROP`, etc...
