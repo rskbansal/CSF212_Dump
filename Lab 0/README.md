@@ -201,7 +201,5 @@ UPDATE Artists
 SET Duration = DATEDIFF(CURDATE(), ActiveSince);
 ```
 
-## Q15
-```sql
-
-```
+## Q16
+`SYSDATE()` also displays the current system time whereas `CURDATE()` doesn't
