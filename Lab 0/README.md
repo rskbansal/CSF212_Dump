@@ -62,24 +62,18 @@ It outputs the SQL query for creating the table `Albums`.
 #### 1
 ```sql
 INSERT INTO Albums 
-VALUES (
-  39391, 'A Thousand Suns', 'Linkin Park', 128, 'Warner Bros', 'Rock', '2016/06/17'
-);
+VALUES (39391, 'A Thousand Suns', 'Linkin Park', 128, 'Warner Bros', 'Rock', '2016/06/17');
 ```
 #### 2
 ```sql
 INSERT INTO Albums 
-VALUES (
-  14573, 'Overexposed', 'Maroon 5', 452, 'A&M', 'Funk', '2016/11/11'
-);
+VALUES (14573, 'Overexposed', 'Maroon 5', 452, 'A&M', 'Funk', '2016/11/11');
 ```
 #### 3
 On executing the following query:
 ```sql
 INSERT INTO Albums 
-VALUES (
-  24573, 'Overexposed', 'Maroon', 400, 'A&M', 'Funk', '2016/11/31'
-);
+VALUES (24573, 'Overexposed', 'Maroon', 400, 'A&M', 'Funk', '2016/11/31');
 ```
 The following error is thrown:
 ```
@@ -90,30 +84,22 @@ ERROR 1292 (22007): Incorrect date value: '2016/11/31' for column 'ReleaseDate' 
 #### 1
 ```sql
 INSERT INTO Artists 
-VALUES (
-  100, 'Maroon 5', '2007/11/13', NULL, 16000123
-);
+VALUES (100, 'Maroon 5', '2007/11/13', NULL, 16000123);
 ```
 #### 2
 ```sql
 INSERT INTO Artists 
-VALUES (
-  101, 'Linkin Park', '2000/02/14', '2017/07/20', 21174672
-);
+VALUES (101, 'Linkin Park', '2000/02/14', '2017/07/20', 21174672);
 ```
 #### 3
 ```sql
-insert into Artists 
-values (
-  102, 'Eminem', '2001/01/15', NULL, 14093412
-);
+INSERT INTO Artists 
+VALUES (102, 'Eminem', '2001/01/15', NULL, 14093412);
 ```
 #### 4
 ```sql
 INSERT INTO Artists 
-VALUES (
-  103, 'Coldplay', '2002/05/13', NULL, 18000992
-);
+VALUES (103, 'Coldplay', '2002/05/13', NULL, 18000992);
 ```
 
 ### Users
@@ -127,16 +113,12 @@ VALUES (
 #### 2
 ```sql
 INSERT INTO Users 
-VALUES (
-  10004, 'Sana Kothari', 'sana123@gmail.com', 'P'
-);
+VALUES (10004, 'Sana Kothari', 'sana123@gmail.com', 'P');
 ```
 #### 3
 ```sql
 INSERT INTO Users 
-VALUES (
-  10005, 'Vishal Ghosh', 'vishy@gmail.com', DEFAULT
-);
+VALUES (10005, 'Vishal Ghosh', 'vishy@gmail.com', DEFAULT);
 ```
 
 ## Q6
