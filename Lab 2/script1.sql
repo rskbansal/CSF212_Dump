@@ -1,0 +1,15 @@
+create table student( name varchar(25), id integer primary key );
+create table courses(course_num integer primary key, cred integer not null,  course_name varchar(50) not null);
+create table instructor( instr_id integer primary key, instr_name varchar(30) not null);
+create table project( proj_id integer primary key, proj_name varchar(30) unique not null);
+create table researcher( res_id integer primary key, res_name varchar(30));
+insert into student values ("Penny", 1), ("Stuart Bloom", 2), ("Howard Wolowitz", 3), ("Will Wheaton", 4), ("Alex D", 5), ("Phoebe Buffay", 6);
+insert into student values ("Jesse Pinkman", 7);
+insert into project values (5, "Manhattan project"), (9, "The Math project"), (2, "Time Travel"), (70, "Luminous Fish"), (68, "The Gorilla Experiment");
+insert into researcher values (1, "Sheldon Cooper"), (4, "Leonard Hofstader"), (5, "Raj Koothrapalli"), (3, "Walter White"), (6, "Ross Geller");
+delete from researcher where res_name="Sheldon Cooper";
+insert into researcher value(1, "Barry Kripke");
+insert into instructor values (1, "Sheldon Cooper"), (2, "Phil Dunphy"), (3, "Cameron Tucker"), (7, "Ted Mosby"), (4, "Claire Dunphy");
+insert into courses values (301, 4, "Analytical Mechanics"), (204, 4, "Intro to Physics for Dummies"), (405, 3, "Intro to Real Estate"), (101, 2, "Intro to Break Dancing");
+alter table student add column tot_credits integer;
+show tables;
